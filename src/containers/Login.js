@@ -4,6 +4,7 @@ import "./Login.css";
 import { Auth } from "aws-amplify";
 import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../libs/hooksLib";
+import { Link } from "react-router-dom";
 
 export default function Login(props) {
   const [fields, handleFieldChange] = useFormFields({
@@ -49,6 +50,7 @@ export default function Login(props) {
             type="password"
           />
         </FormGroup>
+        <Link to="/login/reset">Forgot password?</Link>
         <LoaderButton
           block
           type="submit"
