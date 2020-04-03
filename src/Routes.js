@@ -13,6 +13,7 @@ import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 import ResetPassword from "./containers/ResetPassword";
 import Settings2 from "./containers/Settings-2";
 import ChangePassword from "./containers/ChangePassword";
+import ChangeEmail from "./containers/ChangeEmail";
 
 export default function Routes({ appProps }) {
   return (
@@ -26,6 +27,8 @@ export default function Routes({ appProps }) {
       <UnauthenticatedRoute path="/login/reset" exact component={ResetPassword} appProps={appProps} />
       <AuthenticatedRoute path="/settings2" exact component={Settings2} appProps={appProps} />
       <AuthenticatedRoute path="/settings/password" exact component={ChangePassword} appProps={appProps} />
+      <AuthenticatedRoute
+  path="/settings/email" exact component={ChangeEmail} appProps={appProps} />
       { /* Finally, catch all unmatched routes */ }
       <Route component={NotFound} />
     </Switch>
