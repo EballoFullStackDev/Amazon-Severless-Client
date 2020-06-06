@@ -1,5 +1,6 @@
 AWS
-A simple note taking app called Scratch. It is a single page application powered by a serverless API written completely in JavaScript and hosted on AWS. This is the complete source for the frontend. The backend code is located at <YourBackEndGithubRepository>.
+
+A single page application powered by a serverless API written completely in JavaScript and hosted on AWS. This is the complete source for the frontend. The backend code is located at <YourBackEndGithubRepository>.
 REQUIREMENTS
 * Should allow users to signup and login to their accounts
 * Users should be able to create notes with some content
